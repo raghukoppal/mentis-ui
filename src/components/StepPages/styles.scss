@@ -1,0 +1,27 @@
+.slider-wrap {
+  display: flex;
+  height: 80vh;
+  box-sizing: content-box;
+  .slider {
+    display: flex;
+    margin: 0 0.75rem 0.5rem 0;
+    &.current {
+      width: -webkit-fill-available;
+    }
+    .page-title {
+      writing-mode: tb-rl;
+      transform: rotate(-180deg);
+      background: #cfe8fc;
+      cursor: pointer;
+      padding: 1rem 0.25rem;
+      border-radius: 4px;
+    }
+    .content {
+      background: #cfe8fc;
+      padding: 1rem;
+      display: block;
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+}
